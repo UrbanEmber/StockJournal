@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>TradeJournalUI</class>
+    <widget class="QMainWindow" name="TradeJournalUI">
+        <property name="windowTitle">
+            <string>Stock Trade Journal</string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <layout class="QVBoxLayout" name="verticalLayout">
+                <widget class="QTabWidget" name="tabs">
+                    <widget class="QWidget" name="trade_tab">
+                        <attribute name="title">
+                            <string>Trades</string>
+                        </attribute>
+                        <layout class="QVBoxLayout" name="tradeLayout">
+                            <widget class="QLabel" name="ticker_label">
+                                <property name="text">
+                                    <string>Ticker:</string>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" name="ticker_input"/>
+                            
+                            <widget class="QLabel" name="entry_label">
+                                <property name="text">
+                                    <string>Entry Price:</string>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" name="entry_input"/>
+
+                            <widget class="QLabel" name="exit_label">
+                                <property name="text">
+                                    <string>Exit Price:</string>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" name="exit_input"/>
+
+                            <widget class="QPushButton" name="save_button">
+                                <property name="text">
+                                    <string>Save Trade</string>
+                                </property>
+                            </widget>
+
+                            <widget class="QTableWidget" name="trade_table">
+                                <property name="columnCount">
+                                    <number>5</number>
+                                </property>
+                                <property name="horizontalHeaderLabels">
+                                    <stringlist>
+                                        <string>Date</string>
+                                        <string>Ticker</string>
+                                        <string>Entry</string>
+                                        <string>Exit</string>
+                                        <string>Result</string>
+                                    </stringlist>
+                                </property>
+                            </widget>
+                        </layout>
+                    </widget>
+
+                    <widget class="QWidget" name="calendar_tab">
+                        <attribute name="title">
+                            <string>Calendar</string>
+                        </attribute>
+                        <layout class="QVBoxLayout" name="calendarLayout">
+                            <widget class="QCalendarWidget" name="calendar"/>
+                        </layout>
+                    </widget>
+                </widget>
+            </layout>
+        </widget>
+    </widget>
+</ui>
