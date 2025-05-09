@@ -157,8 +157,9 @@ class TradeController:
         # **Update calendar UI**
         self.update_calendar_colors()
 
-    def update_calendar_colors(self) -> None:
+    def update_calendar_colors(self) -> None: #TODO
         """ Updates the calendar to show profit/loss per day using red and green colors. """
+        """ WORK IN PROGRESS """
         default_format: QTextCharFormat = QTextCharFormat()
         self.ui.calendar.setDateTextFormat(QDate(), default_format)  # Reset all
 
